@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Forensics Recovery Tool</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>XFS & Btrfs Recovery Interface</h1>
+    <p>Simulating deleted data recovery with metadata</p>
+  </header>
+
+  <section class="controls">
+    <label for="fsSelect">Choose File System:</label>
+    <select id="fsSelect">
+      <option value="xfs">XFS</option>
+      <option value="btrfs">Btrfs</option>
+    </select>
+
+    <label for="fileType">Filter by File Type:</label>
+    <select id="fileType">
+      <option value="all">All</option>
+      <option value="docx">.docx</option>
+      <option value="log">.log</option>
+      <option value="exe">.exe</option>
+      <option value="jpg">.jpg</option>
+    </select>
+
+    <button onclick="simulateScan()">Start Recovery</button>
+    <button onclick="exportReport()">Export CSV</button>
+  </section>
+
+  <section class="results">
+    <h2>Recovered Files</h2>
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>File Name</th>
+          <th>Type</th>
+          <th>Size</th>
+          <th>Created</th>
+          <th>Deleted</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamically inserted rows -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

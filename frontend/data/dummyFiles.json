@@ -1,0 +1,39 @@
+[
+    {
+      "name": "report.docx",
+      "type": "docx",
+      "size": "25 KB",
+      "created": "2023-01-10",
+      "deleted": "2023-02-01",
+      "status": "Recovered",
+      "fileSystem": "xfs"
+    },
+    {
+      "name": "server.log",
+      "type": "log",
+      "size": "14 KB",
+      "created": "2023-01-15",
+      "deleted": "2023-03-01",
+      "status": "Recovered",
+      "fileSystem": "btrfs"
+    },
+    {
+      "name": "image.jpg",
+      "type": "jpg",
+      "size": "200 KB",
+      "created": "2023-02-10",
+      "deleted": "2023-03-15",
+      "status": "Partially Recovered",
+      "fileSystem": "xfs"
+    },
+    {
+      "name": "tool.exe",
+      "type": "exe",
+      "size": "1.2 MB",
+      "created": "2023-03-10",
+      "deleted": "2023-04-01",
+      "status": "Recovered",
+      "fileSystem": "btrfs"
+    }
+  ]
+  
